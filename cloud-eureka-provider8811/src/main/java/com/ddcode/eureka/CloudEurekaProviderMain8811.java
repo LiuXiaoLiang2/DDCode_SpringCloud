@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class CloudEurekaClientMain8811 {
+public class CloudEurekaProviderMain8811 {
     public static void main(String[] args) {
-        SpringApplication.run(CloudEurekaClientMain8811.class);
+        SpringApplication.run(CloudEurekaProviderMain8811.class);
     }
 }
