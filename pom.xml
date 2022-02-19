@@ -11,6 +11,9 @@
         <module>cloud-eureka-server7744</module>
         <module>cloud-eureka-provider8811</module>
         <module>cloud-eureka-consumer8822</module>
+        <module>cloud-eureka-server7745</module>
+        <module>cloud-eureka-provider8812</module>
+        <module>cloud-eureka-consumer8823</module>
     </modules>
     <packaging>pom</packaging>
 
