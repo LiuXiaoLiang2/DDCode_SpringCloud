@@ -14,6 +14,11 @@
         <module>cloud-eureka-server7745</module>
         <module>cloud-eureka-provider8812</module>
         <module>cloud-eureka-consumer8823</module>
+        <module>cloud-zookeeper-provider8001</module>
+        <module>cloud-zookeeper-consumer7001</module>
+        <module>cloud-nacos-config8801</module>
+        <module>cloud-nacos-discovery-provider8001</module>
+        <module>cloud-nacos-discovery-consumer7001</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -29,6 +34,7 @@
         <druid.version>1.1.16</druid.version>
         <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
         <fastjson.version>1.2.56</fastjson.version>
+        <spring.cloud.alibaba.version>2.2.0.RELEASE</spring.cloud.alibaba.version>
     </properties>
 
     <!-- dependencyManagement 作用：子模块继承之后，提供作用：锁定版本+子模块不用写groupId和version  -->
