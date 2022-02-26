@@ -23,6 +23,9 @@
         <module>cloud-nacos-ribbon-quickstart-provider7722</module>
         <module>cloud-nacos-ribbon-quickstart-consumer7733</module>
         <module>cloud-nacos-ribbon-myrule-consumer7735</module>
+        <module>cloud-openfeign-quickstart-provider8811</module>
+        <module>cloud-openfeign-quickstart-consumer7711</module>
+        <module>cloud-openfeign-config-consumer7711</module>
     </modules>
     <packaging>pom</packaging>
 
