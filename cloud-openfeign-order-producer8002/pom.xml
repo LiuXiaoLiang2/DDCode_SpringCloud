@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-zookeeper-consumer7001</artifactId>
+    <artifactId>cloud-openfeign-order-producer8002</artifactId>
 
     <dependencies>
         <!--boot web actuator-->
@@ -41,16 +41,19 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
-        <!-- 引入 Spring Cloud ZooKeeper Discovery 相关依赖，将 ZooKeeper 作为注册中心，并实现对其的自动配置 -->
+        <!-- 引入 Spring Cloud Alibaba Nacos Discovery 相关依赖，将 Nacos 作为注册中心，并实现对其的自动配置 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
+        <!--引入公共接口model-->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
+            <groupId>com.ddcode</groupId>
+            <artifactId>cloud-openfeign-order-interface8001</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
+
     </dependencies>
 
 </project>

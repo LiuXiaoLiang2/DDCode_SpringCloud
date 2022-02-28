@@ -26,6 +26,10 @@
         <module>cloud-openfeign-quickstart-provider8811</module>
         <module>cloud-openfeign-quickstart-consumer7711</module>
         <module>cloud-openfeign-config-consumer7711</module>
+        <module>cloud-openfeign-order-interface8001</module>
+        <module>cloud-openfeign-order-producer8002</module>
+        <module>cloud-openfeign-order-consumer8003</module>
+        <module>cloud-feign-support</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -110,26 +114,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork>
-                    <addResources>true</addResources>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                            <goal>build-info</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
