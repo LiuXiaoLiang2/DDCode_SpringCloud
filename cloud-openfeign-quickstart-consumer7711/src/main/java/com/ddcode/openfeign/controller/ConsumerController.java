@@ -64,4 +64,18 @@ public class ConsumerController {
         log.info("echo {} ", echo);
         return echo;
     }
+
+    @PostMapping("/openfeign/consumer/echo8")
+    public String echo8(String name, String pwd) {
+        String echo = orderService.echo8(name, pwd);
+        log.info("echo {} ", echo);
+        return echo;
+    }
+
+    @PostMapping("/openfeign/consumer/echo9")
+    public String echo9(User user) {
+        String echo = orderService.echo9(user);
+        log.info("echo9 {} ", echo);
+        return echo;
+    }
 }

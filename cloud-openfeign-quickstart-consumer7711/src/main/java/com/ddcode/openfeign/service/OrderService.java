@@ -35,4 +35,10 @@ public interface OrderService {
     @PostMapping(value = "/openfeign/provider7", produces = {
             MediaType.APPLICATION_JSON_VALUE }, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public String echo7(@RequestPart(value = "file") MultipartFile file, @RequestParam(value= "name", required = false) String name);
+
+    @PostMapping("/openfeign/provider8")
+    public String echo8(@RequestParam("name") String name, @RequestParam(value= "pwd", required = false) String pwd);
+
+    @PostMapping("/openfeign/provider9")
+    public String echo9(@SpringQueryMap User user);
 }

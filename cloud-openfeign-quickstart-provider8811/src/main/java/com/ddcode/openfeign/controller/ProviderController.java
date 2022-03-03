@@ -74,4 +74,14 @@ public class ProviderController {
         return "openfeign provider7 name : " + name +", fileName : " + file.getOriginalFilename() +" ,server port: " + serverPort;
     }
 
+    @PostMapping("/openfeign/provider8")
+    public String echo8(@RequestParam("name") String name, @RequestParam(value= "pwd", required = false) String pwd) {
+        return "openfeign provider name : " + name + " pwd : "+pwd+", server port: " + serverPort;
+    }
+
+    @PostMapping("/openfeign/provider9")
+    public String echo9(User user){
+        return "openfeign provider3 User : " + user +", server port: " + serverPort;
+    }
+
 }
