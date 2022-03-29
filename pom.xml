@@ -33,6 +33,9 @@
         <module>cloud-openfeign-feignform-consumer7722</module>
         <module>cloud-hystrix-quickstart-provider6611</module>
         <module>cloud-hystrix-quickstart-consumer6622</module>
+        <module>cloud-hystrix-openfeign-order-interface6631</module>
+        <module>cloud-hystrix-openfeign-order-producer6632</module>
+        <module>cloud-hystrix-openfeign-order-consumer6633</module>
     </modules>
     <packaging>pom</packaging>
 
