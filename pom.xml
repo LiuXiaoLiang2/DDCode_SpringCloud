@@ -36,6 +36,8 @@
         <module>cloud-hystrix-openfeign-order-interface6631</module>
         <module>cloud-hystrix-openfeign-order-producer6632</module>
         <module>cloud-hystrix-openfeign-order-consumer6633</module>
+        <module>alicloud-sentinel-flow-control</module>
+        <module>cloud-spring-transaction</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -52,6 +54,7 @@
         <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
         <fastjson.version>1.2.56</fastjson.version>
         <spring.cloud.alibaba.version>2.2.0.RELEASE</spring.cloud.alibaba.version>
+        <mybatis.plus.boot.version>3.5.1</mybatis.plus.boot.version>
     </properties>
 
     <!-- dependencyManagement 作用：子模块继承之后，提供作用：锁定版本+子模块不用写groupId和version  -->
@@ -117,6 +120,11 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.boot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
