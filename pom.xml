@@ -39,6 +39,8 @@
         <module>alicloud-sentinel-flow-control</module>
         <module>cloud-spring-transaction</module>
         <module>cloud-gateway-quickstart</module>
+        <module>cloud-gateway-nacos-discovery-route</module>
+        <module>cloud-gateway-nacos-discovery-customer</module>
     </modules>
     <packaging>pom</packaging>
 
