@@ -38,4 +38,17 @@ public class User2ServiceImpl extends ServiceImpl<User2Mapper, User2> implements
         int i = 1 / 0;
         return insert;
     }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void addRequiresNew(User2 user){
+        user2Mapper.insert(user);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void addRequiresNewException(User2 user){
+        user2Mapper.insert(user);
+        throw new RuntimeException();
+    }
 }
