@@ -38,6 +38,7 @@
         <module>cloud-hystrix-openfeign-order-consumer6633</module>
         <module>alicloud-sentinel-flow-control</module>
         <module>cloud-spring-transaction</module>
+        <module>cloud-gateway-quickstart</module>
     </modules>
     <packaging>pom</packaging>
 
