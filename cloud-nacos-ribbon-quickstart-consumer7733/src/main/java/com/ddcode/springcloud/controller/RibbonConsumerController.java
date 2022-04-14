@@ -1,9 +1,7 @@
 package com.ddcode.springcloud.controller;
 
 import com.alibaba.cloud.nacos.NacosDiscoveryProperties;
-import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,7 +35,7 @@ public class RibbonConsumerController {
     }
 
 
-    @Autowired
+    @Resource
     private LoadBalancerClient loadBalancerClient;
     /**
      * 方式2
@@ -49,7 +47,6 @@ public class RibbonConsumerController {
         ServiceInstance instance;
         //负载均衡选择节点
         instance = loadBalancerClient.choose(BASE_URL);
-        log.info("instance {}", JSON.toJSONString(instance));
         // <2> 发起调用
         if (instance == null) {
             throw new IllegalStateException("获取不到实例");

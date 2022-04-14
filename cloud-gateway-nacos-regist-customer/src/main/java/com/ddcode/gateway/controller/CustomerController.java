@@ -15,4 +15,14 @@ public class CustomerController {
     public String customer(){
         return "gateway_regist_customer : " + serverPort;
     }
+
+    @RequestMapping("/version1")
+    public String version1(){
+        return "version1 : " + serverPort;
+    }
+
+    @RequestMapping("/version2")
+    public String version2(){
+        return "version2 : " + serverPort;
+    }
 }
