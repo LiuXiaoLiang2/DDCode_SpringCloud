@@ -41,6 +41,8 @@
         <module>cloud-gateway-quickstart</module>
         <module>cloud-gateway-nacos-discovery-route</module>
         <module>cloud-gateway-nacos-discovery-customer</module>
+        <module>cloud-gateway-nacos-regist-route</module>
+        <module>cloud-gateway-nacos-regist-customer</module>
     </modules>
     <packaging>pom</packaging>
 
