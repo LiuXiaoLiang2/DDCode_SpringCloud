@@ -46,6 +46,7 @@
         <module>cloud-gateway-gray-level</module>
         <module>cloud-gateway-gray-level-customer1</module>
         <module>cloud-gateway-gray-level-customer2</module>
+        <module>cloud-gateway-filter</module>
     </modules>
     <packaging>pom</packaging>
 
