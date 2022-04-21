@@ -47,6 +47,8 @@
         <module>cloud-gateway-gray-level-customer1</module>
         <module>cloud-gateway-gray-level-customer2</module>
         <module>cloud-gateway-filter</module>
+        <module>cloud-nacos-config-quickstart</module>
+        <module>cloud-nacos-config-more-env</module>
     </modules>
     <packaging>pom</packaging>
 
