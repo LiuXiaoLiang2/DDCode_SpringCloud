@@ -51,6 +51,7 @@
         <module>cloud-nacos-config-more-env</module>
         <module>cloud-nacos-config-jaspyt</module>
         <module>cloud-spring-event</module>
+        <module>cloud-config-server8881</module>
     </modules>
     <packaging>pom</packaging>
 
