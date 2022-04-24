@@ -70,7 +70,7 @@
     </properties>
 
     <!-- dependencyManagement 作用：子模块继承之后，提供作用：锁定版本+子模块不用写groupId和version  -->
-    <!--dependencyManagement 用于父工程, 用于版本的管理-->
+    <!--dependencyManagement 用于父工程, 用于版本的管理  test-->
     <dependencyManagement>
         <dependencies>
             <!--spring boot 2.2.2-->
