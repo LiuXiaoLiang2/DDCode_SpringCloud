@@ -9,14 +9,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-config-server8881</artifactId>
+    <artifactId>cloud-config-client8882</artifactId>
 
     <dependencies>
-        <!-- 引入 Spring Cloud Config Server 相关依赖，实现配置中心的服务端，并实现对其的自动配置 -->
+        <!-- 引入 SpringMVC 相关依赖，并实现对其的自动配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 引入 Spring Cloud Config Client 相关依赖，作为配置中心的客户端，并实现自动化配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
+
         <!--eureka-client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
